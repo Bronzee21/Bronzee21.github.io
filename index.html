@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Mi Portfolio - BS</title>
+</head>
+
+<body>
+
+	<section id="Inicio">
+		<div class="contenido">
+
+			<header>
+				<div class="contenido-header">
+					<h1>B<span>S</span></h1>	
+				    <nav id="nav" class="">
+						<ul id="links">
+	   						<li><a href="#Inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+	   						<li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+	   						<li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+	   						<li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+	   						<li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+	  					</ul>
+				    </nav>	
+
+
+					<div id="icono-nav" onclick="responsiveMenu()">
+	  					<i class="fa-solid fa-bars"></i>
+ 	  				</div>
+
+					<div class="redes">
+ 	  					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+ 	  					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+ 	  					<a href="#"><i class="fa-brands fa-youtube"></i></a>
+ 	  				</div>
+  	 			</div>
+		
+			</header>
+			<div class="presentacion">
+ 				<p class="bienvenida">Bienvenidos</p>
+ 				<h2>Soy <span>Bruno Svegliati</span></h2>
+ 				<p class="descripcion">Este es mi Sitio Web.</p>
+ 				<a href="#Portfolio">Ir a Portfolio</a>	
+  			</div>
+   		</div>
+	</section>
+
+	<section id="sobremi">
+		<div class="contenedor-foto">
+			<img src="img/imagenn.jpg" alt="" id="sobre" class="sobre">
+		</div>
+		<div class="sobremi">
+			<p class="titulo-seccion">Sobre Mi</p>
+			<h2>Hola, soy <span>Bruno Svegliati</span></h2>
+			<p>Estudiante de Desarrollo Web en UTN. Mis objetivos son formarme como Programador, Desarrollador Web, Diseñador Grafico y poder dedicarme a todo lo relacionado con la Programacion.</p>
+			<a href="#">Descargar CV</a>
+		</div>
+	</section>
+  
+
+	<section id="servicios">
+		<h3 class="titulo-seccion">MIS SERVICIOS</h3>
+		<div class="fila">
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-laptop-code"></i></span>
+				<h4>Diseño de Sitios Web</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Web</li>
+					<li>Graphic</li>
+					<li>SEO</li>
+				</ul>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-laptop-code"></i></span>
+				<h4>Diseño de Sitios Web</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Web</li>
+					<li>Graphic</li>
+					<li>SEO</li>
+				</ul>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-laptop-code"></i></span>
+				<h4>Diseño de Sitios Web</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Web</li>
+					<li>Graphic</li>
+					<li>SEO</li>
+				</ul>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+
+		</div>
+	</section>
+	
+
+
+	<div class="contenedor-skills" id="skills">
+		<h3>HABILIDADES</h3>
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span>Html & Css</p>
+				<span class="porcentaje">95%</span>
+			</div>
+			<div class="barra">
+				<div id="html" class="barra-progreso1"></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span>Javascript</p>
+				<span class="porcentaje">90%</span>
+			</div>
+			<div class="barra">
+			<div id="js" class="barra-progreso2"></div>
+			</div>
+		</div>
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span>Base de Datos</p>
+				<span class="porcentaje">90%</span>
+			</div>
+			<div class="barra">
+			<div id="bd" class="barra-progreso3"></div>
+			</div>
+		</div>
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span>Photoshop</p>
+				<span class="porcentaje">85%</span>
+			</div>
+			<div class="barra">
+			<div id="ps" class="barra-progreso4"></div>
+			</div>
+		</div>
+	</div>
+	
+
+	<section id="portfolio">
+		<h3 class="titulo-seccion">MIS PROYECTOS</h3>
+		<div class="fila">
+		<div class="proyecto">
+			<div class="overlay"></div>
+			<img src="img/proyecto1.jpg" alt="">	
+				<div class="info">
+					<h4>Descripcion del Proyecto</h4>
+					<p>Diseño Web</p>
+			</div>
+		</div>
+				<div class="proyecto">
+			<div class="overlay"></div>
+			<img src="img/proyecto2.jpg" alt="">	
+				<div class="info">
+					<h4>Descripcion del Proyecto</h4>
+					<p>Diseño Web</p>
+			</div>
+		</div>
+				<div class="proyecto">
+			<div class="overlay"></div>
+			<img src="img/proyecto3.jpg" alt="">	
+				<div class="info">
+					<h4>Descripcion del Proyecto</h4>
+					<p>Diseño Web</p>
+			</div>
+		</div>
+		</div>
+		<div class="fila">
+		<div class="proyecto">
+			<div class="overlay"></div>
+			<img src="img/proyecto4.jpg" alt="">	
+				<div class="info">
+					<h4>Descripcion del Proyecto</h4>
+					<p>Diseño Web</p>
+			</div>
+		</div>
+				<div class="proyecto">
+			<div class="overlay"></div>
+			<img src="img/proyecto5.jpg" alt="">	
+				<div class="info">
+					<h4>Descripcion del Proyecto</h4>
+					<p>Diseño Web</p>
+			</div>
+		</div>
+				<div class="proyecto">
+			<div class="overlay"></div>
+			<img src="img/proyecto6.jpg" alt="">	
+				<div class="info">
+					<h4>Descripcion del Proyecto</h4>
+					<p>Diseño Web</p>
+			</div>
+		</div>
+		</div>
+		<div class="fila">
+		<div class="proyecto">
+			<div class="overlay"></div>
+			<img src="img/proyecto7.jpg" alt="">	
+				<div class="info">
+					<h4>Descripcion del Proyecto</h4>
+					<p>Diseño Web</p>
+			</div>
+		</div>
+				<div class="proyecto">
+			<div class="overlay"></div>
+			<img src="img/proyecto8.jpg" alt="">	
+				<div class="info">
+					<h4>Descripcion del Proyecto</h4>
+					<p>Diseño Web</p>
+			</div>
+		</div>
+				<div class="proyecto">
+			<div class="overlay"></div>
+			<img src="img/proyecto9.jpg" alt="">	
+				<div class="info">
+					<h4>Descripcion del Proyecto</h4>
+					<p>Diseño Web</p>
+			</div>
+		</div>
+		</div>
+	</section>	
+
+
+	<section id="contacto">
+		<h3 class="titulo-seccion">Contactame</h3>
+		<div class="contenedor-form">
+			<form action="">
+				<div class="fila mitad">
+					<input type="text" placeholder="Nombre Completo" class="input-mitad" name="">
+					<input type="text" placeholder="Direcciòn de Email" class="input-mitad" name="">
+				</div>
+				<div class="fila">
+					<input type="text" placeholder="Motivo..." class="input-full" name="">
+				</div>
+				<div class="fila">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+				</div>
+				<input type="submit" value="Enviar Mensaje" class="btn-enviar" name="">
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<p>Todos los derechos reservados - 2022</p>
+		<div class="redes">
+ 			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+ 			<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+ 			<a href="#"><i class="fa-brands fa-youtube"></i></a>
+ 		</div>
+	</footer>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
